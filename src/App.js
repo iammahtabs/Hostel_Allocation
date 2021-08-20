@@ -40,7 +40,7 @@ function BookRoom(props) {
   const {user, email, gender, hostel} = props;
   const floors = ["1st", "2nd", "3rd", "4th", "5th"];
   const rooms = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  const [room, setRoom] = useState(NaN);
+  const [room, setRoom] = useState(null);
   let color="lightgreen";
   const [floor, setFloor] = useState("1st Floor");
 
@@ -67,7 +67,7 @@ function BookRoom(props) {
           color="gray";
           const info = {user:user, gender:gender, hostel:hostel, room:value, floor: floor, }
           localStorage.setItem(email, JSON.stringify(info));
-          setRoom(room);
+          setRoom(value);
         }
       }}>{value}</div>})}
       </div>
