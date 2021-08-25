@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+  color: #202020;
+  background-color: #fafafa;
+}
+
+.sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.allotment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  margin: auto;
+  max-width: 922px;
+}
+
+.new-user {
+  display: grid;
+  gap: 100px;
+  grid-template-columns: repeat(2, 1fr);
+  user-select: none;
+  padding-top: 100px;
+  width: auto;
+  height: 100vh;
+}
+
+.existing-user {
+  height: 50vh;
+  width: 70%;
+  border: 5px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.details {
+  color: red;
+}
+
+.female {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 50px;
+  width: 70px;
+  background-color: lightpink;
+  border-radius: 10px;
+}
+
+.male {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 50px;
+  width: 70px;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+.container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container select {
+  border-radius: 15px;
+  background-color: lightgrey;
+  margin-bottom: 5px;
+}
+
+.hostels {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  height: 60px;
+  width: 256px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hostel {
+  cursor: pointer;
+  background-color: gray;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.rooms {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  height: 120px;
+  width: 256px;
+  text-align: center;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+}
+
+.room {
+  cursor: pointer;
+  background-color: lightgreen;
+  height: 30px;
+  border-radius: 5px;
+  margin: 10px 10px 0 10px;
+  padding: 5px 5px 5px 5px;
+  font-weight: bold;
+}
+
+.opted {
+  background-color: lightgray;
+}
+
+.book-room {
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: lightskyblue;
+  color: white;
+  border-radius: 15px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid transparent;
+}
