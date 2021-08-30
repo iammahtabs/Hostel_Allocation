@@ -6,14 +6,14 @@ import { googleProvider } from "../config/authMethods";
 function SignIn(props) {
   const { setUser, setEmail } = props;
   const handleOnClick = async (provider) => {
-    await socialMediaAuth(provider)
-      .then((res) => {
-        setUser(res.bc.displayName);
-        setEmail(res.bc.email);
-      })
-      .catch((er) => {
-        return er;
-      });
+    const res = await socialMediaAuth(provider);
+    try {
+      setUser(res.displayName);
+      setEmail(res.email);
+    } catch (er) {
+      return er;
+    }
+    console.log(res);
   };
 
   return (
